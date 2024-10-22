@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    
+    <title>Document</title>
+    <style>
+       html{
+            scroll-behavior: smooth;
+       }
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+            text-decoration: none;
+        }  
+        img{
+            width:80%;  
+            height:60%;  
+        }       
+        .nav{
+            display:flex;
+            padding:20px;
+            background:transparent;                     
+            position: fixed;
+            width: 100%;
+            z-index: 999;  
+            transition: background-color 0.5s ease;
+        }
+
+        .logo{
+            width:60%;
+        }
+        .items{
+            width:40%;            
+        }
+        .items ul{
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+                    
+        li{
+            list-style-type:none;
+            
+        }
+        a{
+            text-decoration:none;
+            color: white; 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+         .nav a:hover {
+            color: rgb(47, 11, 110);
+            
+        }
+         
+        body{
+            background-image: url("black_laptop.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }  
+         .home-content .text-1 {
+            font-size: 27px;
+            }
+  
+        .home-content .text-2 {
+        font-size: 75px;
+        font-weight: 600;
+        margin-left: -3px;
+        }
+  
+        .home-content .text-3 {
+        font-size: 40px;
+        margin: 5px 0;
+        } 
+        .home-content{
+            padding:100px;
+            color:white;
+            font-family: "Ubuntu", sans-serif;
+        }
+        .home-content a{                                   
+            display: inline-block;
+            background: transparent;            
+            font-size: 25px;
+            padding: 12px 36px;
+            margin-top: 20px;            
+            border-radius: 6px;
+            border: 2px solid #1e3551;           
+        }
+        .home-content a:hover{
+            background-color:rgb(47, 11, 110);
+        }
+        .about{
+            display:flex;
+            background: radial-gradient(#e1efff, white);
+            font-family:"Poppins", sans-serif;                       
+        }
+        .about img{
+            margin:20px;
+            border-radius:50%;
+        }
+        .details{
+            padding:70px;                    
+        }
+      .skills{
+        font-family:"Ubuntu", sans-serif;
+        background:radial-gradient(#e1efff, white);
+        padding:65px;
+      }        
+    .data li::before {
+    content: "✪ ";
+    color: #1e3551;
+  }
+  .content{
+    display:flex;
+  }  
+    .line_python{
+    height: 5px;
+    width: 80%;
+    background: #1e3551;
+    position: relative;
+    margin-bottom:50px;
+  }
+  .line_html{
+    height: 5px;
+    width: 60%;
+    background: #1e3551;
+    position: relative;
+    margin-bottom:50px;
+  }
+  .line_css{
+    height: 5px;
+    width: 40%;
+    background: #1e3551;
+    position: relative;
+    margin-bottom:50px;
+  }
+  .line_js{
+    height: 5px;
+    width: 10%;
+    background: #1e3551;
+    position: relative;    
+  }
+ 
+  .lan{
+    padding:100px;
+  }
+  .info 
+    {
+    display:flex;
+    justify-content:space-between;
+    width:500px;    
+    } 
+    .contact{
+        background:radial-gradient(#e1efff, white);
+        font-family: "Poppins", sans-serif;
+    }  
+    .left p{
+        padding:20px;
+        line-height:1.6;
+    } 
+   
+    .get i{
+        font-size:30px;
+        padding:20px;
+        color:#1e3551
+    }    
+    .get{
+        display:flex;
+    }
+    input{
+        height:30px;
+        padding: 0 15px;
+    }
+    .btn{
+        width:150px;
+        height:40px;
+        background: #1e3551;
+        border: 2px solid #1e3551;
+        color:white;
+        border-radius:10px;   
+             
+    }
+    .btn:hover{
+        color: #1e3551;
+        background:none;         
+    }
+     footer {
+    background: #111;
+    padding: 6px 16px;
+    color: #888c8d;
+    text-align: center;
+  }
+  
+  footer span a {
+    color: #1e3551;
+    text-decoration:none;
+  }
+  
+  footer span a:hover {
+    text-decoration: underline;
+  }
+  .detials p{
+    line-height:1.6;
+  }
+  .right{
+    padding: 100px;
+  }
+    
+    </style>
+
+</head>
+<body>
+    <div class="nav" >    
+        <div class="logo" >            
+        </div>            
+         <div class="items" >
+            <ul >
+            <li><a href="#home"><strong>Home</strong></a></li>
+            <li><a href="#about"><strong>About</strong></a></li>
+            <li><a href="#skills"><strong>Skills</strong></a></li>
+            <li><a href="#contact"><strong>Contact</strong></a></li>
+            </ul>
+         </div>                                        
+    </div>
+    <div class="home-content">
+        <div class="text-1">Hello, This is</div>
+        <div class="text-2">Jami Vikranth</div>
+        <div class="text-3">And I'm a Web Developer</div>
+        <a href="#skills">check now </a>
+      </div>
+    <div class="about" id="about">
+        <div class="prof_img">
+            <img src="C:\Users\vikra\OneDrive\Desktop\html\pic.jpg"  />
+            
+        </div>
+        <div class="details">
+            <h2 class="title" style="font-family: Ubuntu, sans-serif;font-size:40px">About Me</h2>
+            <span style="font-size:20px;margin-left:20px;">—who I am ?—</span><br>
+            <b><h2 style="padding:20px;">I'm Vikranth and I'm </h2></b>
+            <p style="font-size:18px;margin-left:20px" class="para1">Seeking an entry-level opportunity with an esteemed organization where I can utilize my skills & enhance learning in the field of work.</p>              
+            <h2 style="padding:15px">Why Work With Me</h2   >
+            <p style="margin-left:20px">I'm a great communicator & love to invest the necessary time to understand the customer's problem very well.</p>
+        </div>
+    </div>
+    <div class="space" style="width:100%;height:100px;background:radial-gradient(#e1efff, white)">
+        </div>        
+   <div class="skills" id="skills"> 
+    <h1><center>My Skills</center></h1><br>
+    <h3 style="color:#1e3551"><center>—What I Know?—</center></h3>  
+    <div class="content" > 
+        <div class="data" style="padding:90px">
+        <h3>INTERNSHIP</h3>
+        <ul style="padding:10px;margin:10px 0px 0px -10px">
+            <li>Cyber Security at Supraja Technology</li>
+            <li> IBM"WEB DEVELOPMENT"</li>
+        </ul>
+        <h3>PROJECTS</h3>
+        <ul style="padding:10px ;margin:10px 0px 0px -10px">
+            <li>Portfolio (HTML, CSS, js, Bootstraps)</li>
+            <li>Landing page (HTML, CSS,js)</li>
+            <li>online code editor</li>
+        </ul >
+        <h3>DEVELOPMENT SKILLS</h3>
+        <p style="width:300px ;padding:10px;margin:10px 0px 0px -10px">I'm familiar & work on a daily basis with HTML, CSS, JavaScript, python and other familar computer languages.</p>
+        </div>
+        <div class="lan">            
+                <div class="info">
+                  <h4>Python</h4>
+                  <h4>80%</h4>
+                </div>
+                <div class="line_python"></div>             
+              <div class="info">
+                <h4>Html</h4>
+                <h4>60%</h4>
+              </div>
+              <div class="line_html"></div>
+            <div class="info">
+                <h4>Css</h4>
+                <h4>40%</h4>
+              </div>
+              <div class="line_css"></div>             
+            <div class="info">
+                <h4>Js</h4>
+                <h4>10%</h4>
+              </div>
+              <div class="line_js"></div>                                
+        </div>
+   </div>
+   </div>
+    <div class="contact" id="contact">
+        <center><strong><h1>—Contact Me—</h1></strong></center><br>
+        <center><span style="font-size:20px;color:#1e3551"><b>—Get in touch—</b>    </span></center>
+        <div class="get">
+            <div class="left" style="width:40%;padding:70px;">
+                <h3 style="padding-left:15px">Get in Touch</h3>
+                <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas to be a part of your visions. Email me with any questions or inquiries. I'll happy to answer your questions and set up a meeting with you.</p>        
+                <span><i class="fas fa-user" ></i></span>
+                <b><span>Name</span></b><br>
+                <span style="margin:60px">Vikranth</span><br>
+                <i class="far fa-map-marker-alt"></i>
+                <strong><span >Adress</span></strong><br>
+                <span style="margin:30px">Andhrapradesh,India</span><br>
+                <i class="fas fa-envelope"></i>
+                <strong><span >Email</span></strong><br>
+                <span style="margin:30px">vikranthjmai123@gmail.com</span><br>
+                <i class="fas fa-language"></i>
+                <strong><span >Languages Known</span></strong><br>
+                <span style="margin:50px">English,Telugu</span><br>
+            </div>
+               
+            <div class="right">
+                <b><span style="font: size 20px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Message Me</span> </b>
+                    <form >                                                     
+                        <input type="email" placeholder="Enter Your Email" required> <br> <br>                    
+                        <input type="text" placeholder="Subject" required> <br>  <br>                  
+                        <textarea cols="30" rows="10" placeholder="Message.." required></textarea><br>  <br>          
+                        <button class="btn" type="submit" ><b>Send message</b></button>                      
+                    </form>
+                </div>  
+            </div>
+        </div>  
+    <footer>
+        <span>
+            <a href="#"> Vikranth</a> | <span class="far fa-copyright"></span>All Rights Reserved. Privacy Policy
+          </span>
+    </footer>
+</body>
+</html>
+
