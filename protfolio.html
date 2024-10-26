@@ -213,7 +213,11 @@
   body{
     width:100%;
   }
- 
+  .menu-toggle {
+                display: none; /* Hide the menu toggle by default */
+                font-size: 28px; /* Size of the hamburger icon */
+                cursor: pointer; /* Pointer cursor for clickable */
+            }
   @media (max-width: 768px) {           
            .about{
             width:768px;
@@ -255,11 +259,7 @@
             .prof_img{
                 height:10%;
             }
-            .menu-toggle {
-                display: none; /* Hide the menu toggle by default */
-                font-size: 28px; /* Size of the hamburger icon */
-                cursor: pointer; /* Pointer cursor for clickable */
-            }
+           
             .items.active {
                 display: flex; /* Show items when active */
             }
