@@ -7,8 +7,9 @@
     
     <title>Document</title>
     <style>
-       html{
+       html {
             scroll-behavior: smooth;
+            
        }
         *{
             margin:0px;
@@ -24,17 +25,14 @@
             display:flex;
             padding:20px;
             background:transparent;                     
-            position: fixed;
+            position:fixed;
             width: 100%;
             z-index: 999;  
             transition: background-color 0.5s ease;
-        }
-
-        .logo{
-            width:60%;
-        }
+        }        
         .items{
-            width:40%;            
+            width:40%; 
+            float:right;           
         }
         .items ul{
             display:flex;
@@ -43,8 +41,7 @@
         }
                     
         li{
-            list-style-type:none;
-            
+            list-style-type:none;            
         }
         a{
             text-decoration:none;
@@ -52,19 +49,13 @@
             font-family: Arial, Helvetica, sans-serif;
         }
          .nav a:hover {
-            color: rgb(47, 11, 110);
-            
-        }
-         
+            color: rgb(47, 11, 110);            
+        }         
         body{
-            background-image: url("black_laptop.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
+            background-image: url("black_laptop.jpg");        
+            background-size:cover;            
+            width:100%;            
         }  
-        body{
-    width:100%;
-  }
          .home-content .text-1 {
             font-size: 27px;
             }
@@ -99,7 +90,9 @@
         .about{
             display:flex;
             background: radial-gradient(#e1efff, white);
-            font-family:"Poppins", sans-serif;                       
+            font-family:"Poppins", sans-serif;  
+            background-size: cover;
+
         }
         .about img{
             margin:20px;
@@ -112,6 +105,7 @@
         font-family:"Ubuntu", sans-serif;
         background:radial-gradient(#e1efff, white);
         padding:65px;
+        
       }        
     .data li::before {
     content: "✪ ";
@@ -164,6 +158,8 @@
     .left p{
         padding:20px;
         line-height:1.6;
+        text-align: justify;
+        margin-bottom: 20px;
     } 
    
     .get i{
@@ -202,7 +198,9 @@
     color: #1e3551;
     text-decoration:none;
   }
-  
+  .space{
+    background:radial-gradient(#e1efff, white);
+  }
   footer span a:hover {
     text-decoration: underline;
   }
@@ -212,15 +210,67 @@
   .right{
     padding: 100px;
   }
+  body{
+    width:100%;
+  }
+  @media (max-width: 768px) {
+            .nav {
+                flex-direction: column;
+                align-items: flex-end;
+                padding: 10px;
+                position:fixed;
+            }
+           .about{
+            width:768px;
+           }
+           
+           .skills{
+            width:768px;
+           }
+           .contact{ 
+            width:768px;
+           }
+            .items ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .about {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .skills .content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .lan{
+              width:100%;
+              padding:20px;
+            }
+            .left p{
+                width:300px;       
+                
+                text-align: center;
+            }
+            .get {
+                flex-direction: column;
+                align-items: center;
+            }
+            .prof_img{
+                height:20%;
+            }
+            .home-content{}
+        }
     
     </style>
-
+  
 </head>
 <body>
     <div class="nav" >    
         <div class="logo" >            
         </div>            
-         <div class="items" >
+         <div class="items">
             <ul >
             <li><a href="#home"><strong>Home</strong></a></li>
             <li><a href="#about"><strong>About</strong></a></li>
@@ -229,7 +279,7 @@
             </ul>
          </div>                                        
     </div>
-    <div class="home-content">
+    <div class="home-content" id="home">
         <div class="text-1">Hello, This is</div>
         <div class="text-2">Jami Vikranth</div>
         <div class="text-3">And I'm a Web Developer</div>
@@ -237,7 +287,7 @@
       </div>
     <div class="about" id="about">
         <div class="prof_img">
-            <img src="pic.jpg"/>
+            <img src="C:\Users\vikra\OneDrive\Desktop\html\pic.jpg"/>            
         </div>
         <div class="details">
             <h2 class="title" style="font-family: Ubuntu, sans-serif;font-size:40px">About Me</h2>
@@ -248,8 +298,7 @@
             <p style="margin-left:20px">I'm a great communicator & love to invest the necessary time to understand the customer's problem very well.</p>
         </div>
     </div>
-    <div class="space" style="width:100%;height:100px;background:radial-gradient(#e1efff, white)">
-        </div>        
+           
    <div class="skills" id="skills"> 
     <h1><center>My Skills</center></h1><br>
     <h3 style="color:#1e3551"><center>—What I Know?—</center></h3>  
@@ -271,7 +320,7 @@
         </div>
         <div class="lan">            
                 <div class="info">
-                  <h4>Python</h4>
+                  <h4>C++</h4>
                   <h4>80%</h4>
                 </div>
                 <div class="line_python"></div>             
