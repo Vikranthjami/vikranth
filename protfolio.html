@@ -32,7 +32,7 @@
         }        
         .items{
             width:40%; 
-            float:right;           
+                      
         }
         .items ul{
             display:flex;
@@ -213,13 +213,8 @@
   body{
     width:100%;
   }
-  @media (max-width: 768px) {
-            .nav {
-                flex-direction: column;
-                align-items: flex-end;
-                padding: 10px;
-                position:fixed;
-            }
+ 
+  @media (max-width: 768px) {           
            .about{
             width:768px;
            }
@@ -233,13 +228,14 @@
             .items ul {
                 flex-direction: column;
                 gap: 10px;
+                padding:10px;
+                align-items: flex-start;
             }
 
             .about {
                 flex-direction: column;
                 text-align: center;
-            }
-
+            }           
             .skills .content {
                 flex-direction: column;
                 align-items: center;
@@ -249,8 +245,7 @@
               padding:20px;
             }
             .left p{
-                width:300px;       
-                
+                width:300px;                       
                 text-align: center;
             }
             .get {
@@ -258,19 +253,47 @@
                 align-items: center;
             }
             .prof_img{
-                height:20%;
+                height:10%;
             }
-            .home-content{}
+            .menu-toggle {
+                display: none; /* Hide the menu toggle by default */
+                font-size: 28px; /* Size of the hamburger icon */
+                cursor: pointer; /* Pointer cursor for clickable */
+            }
+            .items.active {
+                display: flex; /* Show items when active */
+            }
+            .menu-toggle {
+                display: block; /* Show the hamburger icon */
+            }
+            .items {
+                display:none;/* Hide items by default */
+                width: 100%; /* Full width for the dropdown */
+                flex-direction: column; /* Stack items vertically */
+                position: fixed; /* Overlay */
+                
+                 /* Position below the navbar */
+                left: 40; /* Align to the left */
+                background-color: rgba(80, 81, 83, 0.9); /* Semi-transparent background */
+                z-index: 998;  
+                width:100px;               
+            }       
+            .items ul {
+                flex-direction: column;
+                width: 100%;
+            }                 
+           
         }
     
-    </style>
-  
+    
+    </style>  
 </head>
 <body>
-    <div class="nav" >    
-        <div class="logo" >            
-        </div>            
-         <div class="items">
+    <div class="nav" >            
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars" style="color: #eef1f6;"></i>
+        </div>        
+         <div class="items" id="nav-items">
             <ul >
             <li><a href="#home"><strong>Home</strong></a></li>
             <li><a href="#about"><strong>About</strong></a></li>
@@ -287,7 +310,7 @@
       </div>
     <div class="about" id="about">
         <div class="prof_img">
-            <img src="pic.jpg"/>            
+            <img src="C:\Users\vikra\OneDrive\Desktop\html\pic.jpg"/>            
         </div>
         <div class="details">
             <h2 class="title" style="font-family: Ubuntu, sans-serif;font-size:40px">About Me</h2>
@@ -379,6 +402,14 @@
             <a href="#"> Vikranth</a> | <span class="far fa-copyright"></span>All Rights Reserved. Privacy Policy
           </span>
     </footer>
+    <script>
+        const menuToggle = document.getElementById('mobile-menu');
+        const navItems = document.getElementById('nav-items');
+
+        menuToggle.addEventListener('click', () => {
+            navItems.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
 
